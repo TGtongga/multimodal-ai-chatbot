@@ -20,7 +20,10 @@ A state-of-the-art Gradio-based chatbot application featuring the latest 2025 AI
 ### 1. Installation
 
 ```bash
-# Clone or download the project files
+# Clone the repository
+git clone https://github.com/TGtongga/multimodal-ai-chatbot.git
+cd multimodal-ai-chatbot
+
 # Install dependencies
 pip install -r requirements.txt
 ```
@@ -97,7 +100,7 @@ chatbot/
 
 **Supported Formats:**
 - **Images**: JPEG, PNG, GIF, WebP, BMP
-- **Documents**: Coming soon (PDF, DOCX, TXT)
+- **Documents**: TXT, MD, PY, JS, HTML, CSS, JSON, XML, CSV
 
 **Smart Processing Features:**
 - ✅ Automatic image optimization and resizing
@@ -125,6 +128,9 @@ Strategic advisor for business strategy, market analysis, financial planning, op
 
 ### 🎓 **Educational Tutor**
 Adaptive learning specialist using multiple teaching methods, Socratic questioning, and personalized instruction across all subjects.
+
+### 📊 **Data Analyst**
+Expert data scientist with statistical analysis, machine learning, visualization, and business intelligence capabilities.
 
 ## ⚙️ Advanced Configuration
 
@@ -245,7 +251,7 @@ LOG_LEVEL=DEBUG
 - Enable async processing for better responsiveness
 - Monitor API usage and rate limits
 
-## � API Documentation & Resources
+## 📚 API Documentation & Resources
 
 ### 🔗 Official Documentation
 - **OpenAI**: [Platform Docs](https://platform.openai.com/docs) | [GPT-4.1 Guide](https://platform.openai.com/docs/models/gpt-4-1)
@@ -264,14 +270,14 @@ LOG_LEVEL=DEBUG
 Contributions are welcome! Please follow these steps:
 
 1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## 📄 License
 
-This project is released under the MIT License. See LICENSE file for details.
+This project is released under the MIT License. See [LICENSE](LICENSE) file for details.
 
 ## 🆘 Support
 
@@ -279,7 +285,7 @@ If you encounter issues or have questions:
 
 1. Check the troubleshooting section above
 2. Review the API documentation for your provider
-3. Create an issue on the project repository
+3. Create an issue on the [project repository](https://github.com/TGtongga/multimodal-ai-chatbot/issues)
 4. Check that your API keys have the necessary permissions
 
 ## 🔄 Roadmap & Future Updates
@@ -307,3 +313,5 @@ The application is designed for continuous evolution. Upcoming features include:
 ---
 
 **💡 Note**: This application requires valid API keys from the respective AI providers. Usage costs vary by provider and model. Please refer to each provider's current pricing documentation for detailed cost information.
+
+**🔗 Repository**: [https://github.com/TGtongga/multimodal-ai-chatbot](https://github.com/TGtongga/multimodal-ai-chatbot)
