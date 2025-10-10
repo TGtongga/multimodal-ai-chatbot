@@ -194,10 +194,9 @@ class MultimodalChatbot:
                                     'data': processed_file['data'],
                                     'media_type': processed_file.get('media_type', detected_media_type)
                                 })
-                    elif processed_file['type'] == 'document':
-                        doc_text = f"""\n\n--- Content from {processed_file['name']} ---\n"
-                        {processed_file['content']}\n\n--- End of {processed_file['name']} ---\n\n"""
-                        text_content += doc_text
+                            elif processed_file['type'] == 'document':  # FIX: Moved inside validate_file_path block
+                                doc_text = f"\n\n--- Content from {processed_file['name']} ---\n{processed_file['content']}\n--- End of {processed_file['name']} ---\n\n"
+                                text_content += doc_text
                     
                     elif isinstance(file_info, dict) and 'path' in file_info:
                         # It's a Gradio FileData object
@@ -212,10 +211,9 @@ class MultimodalChatbot:
                                     'data': processed_file['data'],
                                     'media_type': processed_file.get('media_type', detected_media_type)
                                 })
-                        elif processed_file['type'] == 'document':
-                            doc_text = f"""\n\n--- Content from {processed_file['name']} ---\n"
-                            {processed_file['content']}\n\n--- End of {processed_file['name']} ---\n\n"""
-                            text_content += doc_text
+                            elif processed_file['type'] == 'document':  # FIX: Moved inside validate_file_path block
+                                doc_text = f"\n\n--- Content from {processed_file['name']} ---\n{processed_file['content']}\n--- End of {processed_file['name']} ---\n\n"
+                                text_content += doc_text
                     else:
                         logger.warning(f"Unknown file format: {file_info}")
             
