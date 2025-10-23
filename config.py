@@ -6,6 +6,7 @@ Configuration settings for the multimodal chatbot
 AVAILABLE_MODELS = {
     'anthropic': [
         'claude-sonnet-4-5',
+        'claude-haiku-4-5',                     # Fastest model with near-frontier intelligence
         'claude-sonnet-4-0',                    # High-performance, efficient
         'claude-opus-4-1',                      # Most capable, best coding model
         'claude-3-7-sonnet-latest'              # Advanced with extended thinking
@@ -31,7 +32,8 @@ THINKING_SUPPORTED_MODELS = [
     "claude-sonnet-4-5",
     "claude-sonnet-4-0",
     "claude-opus-4-1",
-    "claude-3-7-sonnet-latest"
+    "claude-3-7-sonnet-latest",
+    "claude-haiku-4-5"
 ]
 
 THINKING_DEFAULTS = {
@@ -113,6 +115,12 @@ MODEL_CAPABILITIES = {
         'vision': True,
         'max_tokens': 64000,                    # 64K output tokens
         'context_window': 1000000               # 200K standard (1M with beta header)
+    },
+    'claude-haiku-4-5': {
+        'text': True,
+        'vision': True,
+        'max_tokens': 64000,                    # 64K output tokens
+        'context_window': 200000                # 200K context window
     },
     'claude-sonnet-4-0': {
         'text': True,
@@ -770,6 +778,7 @@ MODEL_DEFAULTS = {
     # Anthropic models (2025)
     'claude-opus-4-1': {'temperature': 1.0, 'max_tokens': 32000},
     'claude-sonnet-4-5': {'temperature': 0.7, 'max_tokens': 64000},
+    'claude-haiku-4-5': {'temperature': 0.7, 'max_tokens': 64000},
     'claude-sonnet-4-0': {'temperature': 0.7, 'max_tokens': 64000},
     'claude-3-7-sonnet-latest': {'temperature': 0.7, 'max_tokens': 64000},
 }
